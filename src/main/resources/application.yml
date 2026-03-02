@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: ${DATASOURCE_URL}
+    username: ${POSTGRES_USER}
+    password: ${POSTGRES_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  liquibase:
+    enabled: true
+    change-log: classpath:/db/changelog-master.yaml
+
+
+telegram:
+  bot:
+    token: ${TELEGRAM_BOT_TOKEN}
+    name: ${TELEGRAM_BOT_NAME}
+
+
+llm:
+  base-url: ${LLM_URL}
+  connect-timeout: 5s
+  read-timeout: 300s
