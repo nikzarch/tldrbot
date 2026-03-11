@@ -29,6 +29,8 @@ dependencies {
 
     implementation("io.github.oshai:kotlin-logging:8.0.01")
 
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.2")
+
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 
     implementation("org.jetbrains.kotlin:kotlin-reflect")
